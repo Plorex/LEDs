@@ -34,12 +34,14 @@ void main(void)
         {
         if(SW == 0)
             {
-            while(SW == 0)
-                {
                 led = 1;
-                led1 = 1;
-                __delay_ms(1000);                
-                }
+                led1 = 0;
+                __delay_ms(1000);
+                led = 0;
+                led1 = 0;
+                __delay_ms(1000);
+                led = 0;
+                led1 = 1;                 
             }
         else
             {
